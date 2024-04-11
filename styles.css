@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Your preferred font', sans-serif;
+  }
+  
+  body {
+    background-color: #F5d04e;
+    background-image: url('background.svg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .container {
+    width: 350px;
+    background-color: #FFF;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .title, .published, .author, .description {
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 80px 0 10px;
+  }
+  
+  .published, .author {
+    color: black;
+    font-size: 14px;
+  }
+  
+  .description {
+    font-size: 12px;
+    line-height: 1.5;
+    color: gray;
+    margin-bottom: 20px;
+  }
+  
+  .avatar {
+    width: 50px; /* Adjust based on your preference */
+    border-radius: 50%;
+  }
+  .profile-pic {
+    width: 110px; /* Ustaw szerokość obrazka */
+    height: 110px; /* Ustaw wysokość obrazka */
+    border-radius: 50%; /* To sprawia, że obrazek jest kołem */
+    display: block; /* Umożliwia stosowanie marginesów */
+    margin: -55px auto 20px; /* Ujemny margines, by zdjęcie nachodziło na tło */
+    border: 4.5px solid white; /* Delikatna biała obramówka */
+    position: absolute; /* Pozycjonowanie względem kontenera */
+    left: 0; 
+    right: 0;
+    margin-left: auto;
+    margin-right: auto; /* Centrowanie zdjęcia */
+  }
+
+  /* ... other styles ... */
+
+.stats {
+    display: flex;
+    justify-content: space-around; /* This will distribute space evenly between the stat items */
+    align-items: center;
+    text-align: center; /* Center the text for each stat */
+    padding: 20px; /* Add some padding inside the stats container */
+  }
+  
+  .stat {
+    flex: 1; /* Each stat item will take up equal space */
+  }
+  
+  .number {
+    display: block; /* Makes the number appear above the label */
+    font-size: 18px; /* Set the font size as needed */
+    font-weight: bold; /* Makes the number bold */
+  }
+  
+  .label {
+    display: block; /* Makes the label appear below the number */
+    font-size: 12px; /* Set the font size as needed */
+    color: #6a6a6a; /* A lighter color for the label text */
+  }
+  
+  /* ... rest of your styles ... */
+  
