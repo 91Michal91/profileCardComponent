@@ -6,19 +6,31 @@
   
   body, html {
     height: 100%;
-    font-family: 'Your preferred font', sans-serif;
+    font-family:  font-family 'Kumbh Sans', sans-serif;
+  }
+
+.normal-weight {
+    font-weight: 400;
+  }
+  
+  
+  .bold-weight {
+    font-weight: 700;
   }
   
   body {
-    background-color: #F5d04e;
-    background-image: url('background.svg');
-    background-size: cover;
-    background-position: center;
+    background-color: #19a1ad;
+    background-image: url('images/bg-pattern-top.svg'), url('images/bg-pattern-bottom.svg');
+    background-position: right 50vw bottom 40vh, left 50vw top 40vh; 
+    background-repeat: no-repeat;
+    background-size: contain; 
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
-  }
+    height: 100vh;
+}
+
   
   .container {
     width: 350px;
@@ -29,6 +41,10 @@
     flex-direction: column;
     position: relative;
   }
+  .age {
+    color: gray; 
+  }
+  
   
   .title, .published, .author, .description {
     padding: 0 20px;
@@ -54,48 +70,48 @@
   }
   
   .avatar {
-    width: 50px; /* Adjust based on your preference */
+    width: 50px; 
     border-radius: 50%;
   }
   .profile-pic {
-    width: 110px; /* Ustaw szerokość obrazka */
-    height: 110px; /* Ustaw wysokość obrazka */
-    border-radius: 50%; /* To sprawia, że obrazek jest kołem */
-    display: block; /* Umożliwia stosowanie marginesów */
-    margin: -55px auto 20px; /* Ujemny margines, by zdjęcie nachodziło na tło */
-    border: 4.5px solid white; /* Delikatna biała obramówka */
-    position: absolute; /* Pozycjonowanie względem kontenera */
+    width: 110px; 
+    height: 110px;
+    border-radius: 50%; 
+    display: block; 
+    margin: -55px auto 20px; 
+    border: 5.5px solid white;
+    position: absolute; 
     left: 0; 
     right: 0;
     margin-left: auto;
-    margin-right: auto; /* Centrowanie zdjęcia */
+    margin-right: auto; 
   }
 
-  /* ... other styles ... */
+ 
 
 .stats {
     display: flex;
-    justify-content: space-around; /* This will distribute space evenly between the stat items */
+    justify-content: space-around; 
     align-items: center;
-    text-align: center; /* Center the text for each stat */
-    padding: 20px; /* Add some padding inside the stats container */
+    text-align: center; 
+    padding: 20px;
   }
   
   .stat {
-    flex: 1; /* Each stat item will take up equal space */
+    flex: 1; 
   }
   
   .number {
-    display: block; /* Makes the number appear above the label */
-    font-size: 18px; /* Set the font size as needed */
-    font-weight: bold; /* Makes the number bold */
+    display: block;
+    font-size: 18px; 
+    font-weight: bold; 
   }
   
   .label {
-    display: block; /* Makes the label appear below the number */
-    font-size: 12px; /* Set the font size as needed */
-    color: #6a6a6a; /* A lighter color for the label text */
+    display: block; 
+    font-size: 12px; 
+    color: #6a6a6a; 
   }
   
-  /* ... rest of your styles ... */
+ 
   
